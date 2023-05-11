@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 const userRoutes = require("./routes/users");
 const cors = require("cors");
+const IP = require('ip');
+
+console.log(IP.address())
 
 const app = express();
 
